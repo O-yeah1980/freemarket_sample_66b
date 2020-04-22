@@ -1,39 +1,13 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html,body {
-  background-color: whitesmoke;
-  .title {
-    width: 150px;
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-    &__black {
-      font-weight: bold;
-      margin-right: 5px;
-      border-bottom: solid 3px mediumturquoise;
-    }
-    &__hissu {
-      height: 20px;
-      width: 20%;
-      background-color: red;
-      color: seashell; 
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 5px
-    }
-  }
-
+// html,body {
+  // background-color: whitesmoke;
   .comment-red {
     color: red;
     margin-bottom: 10px;
   }
   
-  
-
-
-
   .header-logo {
     height: 70px;
     width: 15%;
@@ -42,7 +16,7 @@ html,body {
     margin-right: auto;
     margin-bottom: 10px;
   }
-
+  
   .items-wrapper {
     background-color: white;
     height: 100%;
@@ -55,14 +29,33 @@ html,body {
       padding: 20px;
       border-bottom: groove;
       position: relative;
+      .title {
+        width: 150px;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 10px;
+        &__black {
+          font-weight: bold;
+          margin-right: 5px;
+          border-bottom: solid 3px mediumturquoise;
+        }
+        &__hissu {
+          height: 20px;
+          width: 20%;
+          background-color: red;
+          color: seashell; 
+          font-size: 12px;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 5px;
+          line-height: 20px;
+        }
+      }
       &__comment1 {
         font-size: small;
       }
-      
-
-
-
       .clearfix {
+        height: 180px;
         width: 100%;
         overflow: hidden;
         background: #ddd;
@@ -74,22 +67,19 @@ html,body {
         #previews {
           .image-preview {
             .input {
-              .upload-label
-                .upload-label__text {
+              .upload-label {
+                &__text {
                   .input-area {
                     .hidden-image_upload {
-          
+                      
                     }
                   }
                 }
-
+              }
             }
           }
         }
-            
-              
       }
-
       .clearfix.dragover,
       .clearfix.active {
         background: #cfc;
@@ -97,12 +87,6 @@ html,body {
         color: #9c9;
       }
     }
-    
-    
-      
-  
-    
-    
     .item-info {
       height: 100%;
       padding: 20px;
@@ -216,7 +200,6 @@ html,body {
         }
       }
     }
-
     .profit {
       display: flex;
       justify-content: space-between;
@@ -228,7 +211,6 @@ html,body {
 
       }
     }
-
     .syuppin-btn {
       background-color: mediumturquoise;
       color: seashell;
@@ -256,4 +238,4 @@ html,body {
       border-radius: 5px;
     }
   }
-}
+// }

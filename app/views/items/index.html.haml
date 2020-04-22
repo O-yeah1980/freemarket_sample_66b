@@ -1,6 +1,6 @@
 
-= link_to image_tag("/assets/material/logo/logo.png", height: "30", width: "180", class: "header-logo")
-.wrapper
+= link_to image_tag("logo/logo.png", height: "30", width: "180", class: "header-logo")
+.items-wrapper
   .item-image
     .title
       .title__black
@@ -9,9 +9,6 @@
         必須
     .item-image__comment1
       最大10枚までアップロードできます。
-    
-
-    
     = form_with model: @item, class: "form", id: "item-form" do |f|
       .clearfix
         %ul#previews
@@ -21,6 +18,7 @@
                 %li.input
                   %label.upload-label{style:"display: none;"}
                     .upload-label__text
+                      = image_tag 'icon/icon_camera.png', height: '40', width: '40'
                       ドラッグアンドドロップ
                       %br
                       またはクリックしてファイルをアップロード
@@ -32,20 +30,6 @@
                   .image-preview_btn
                     .image-preview_btn_edit 編集
                     .image-preview_btn_delete 削除
-                
-
-  
-
-
-          
-              
-              
-            
-            
-         
-        
-
-
 
     .comment-red
       画像がありません
